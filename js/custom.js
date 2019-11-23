@@ -1,27 +1,18 @@
 $(document).ready(function () {
-    var c = 0;
+    var c = 1;
     $("td").click(function () {
         c++;
+        var id = $(this).attr('id');
         if (c % 2 == 0)
-            // var id = event.target.id;
-            $(".cross").show();
+            $("#" + id + " .zero").show();
         else
-            $(" .zero").show();
+            $("#" + id + " .cross ").show();
+
     });
 });
 
 
-// } else {
-//     $(document).ready(function () {
-//             $("td").click(function () {
-//                     $("#(get_reply())".show(".cross");
-//                     });
-//             });
-//     }
-// }
-
 function get_reply() {
     var a = "#".concat(event.target.id);
-    console.log(event.target.id);
-    alert(a);
+    console.log(a);
 }
