@@ -1,0 +1,43 @@
+body{
+    background-color: red !important;
+}
+h1{
+    color:#fff !important;
+}
+table{
+    width:100%;
+    max-width:300px;
+    height: 400px;
+}
+td{
+    width:100%;
+    max-width:60px;
+    height: 70px;
+}
+
+
+table .border-right{
+    border-right: 4px solid #fff !important;
+}
+
+table .border-left{
+    border-left: 4px solid #fff !important;
+}
+ table .border-bottom{
+    border-bottom: 4px solid #fff !important;
+}
+.cross{
+    display:none;
+} 
+
+.zero{
+    display:none;
+}
+
+@media only screen and (max-width: 480px) {
+    td{
+        width:100%;
+        max-width:100px;
+        height: 90px;
+    }
+  }
