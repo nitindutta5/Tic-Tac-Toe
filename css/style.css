@@ -26,13 +26,7 @@ table .border-left{
  table .border-bottom{
     border-bottom: 4px solid #fff !important;
 }
-.cross{
-    display:none;
-} 
 
-.zero{
-    display:none;
-}
 
 @media only screen and (max-width: 480px) {
     td{
