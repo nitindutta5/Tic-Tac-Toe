@@ -11,26 +11,28 @@ $(document).ready(function () {
             $("#" + id).off('click');
         }
         if (($("#1 div").hasClass("zero") && $("#2 div").hasClass("zero") && $("#3 div").hasClass("zero")) ||
-            ($("#3 div").hasClass("zero") && $("#4 div").hasClass("zero") && $("#6 div").hasClass("zero")) ||
+            ($("#4 div").hasClass("zero") && $("#5 div").hasClass("zero") && $("#6 div").hasClass("zero")) ||
             ($("#7 div").hasClass("zero") && $("#8 div").hasClass("zero") && $("#9 div").hasClass("zero")) ||
-            ($("#1 div").hasClass("zero") && $("#3 div").hasClass("zero") && $("#7 div").hasClass("zero")) ||
-            ($("#2 div").hasClass("zero") && $("#4 div").hasClass("zero") && $("#8 div").hasClass("zero")) ||
+            ($("#1 div").hasClass("zero") && $("#4 div").hasClass("zero") && $("#7 div").hasClass("zero")) ||
+            ($("#2 div").hasClass("zero") && $("#5 div").hasClass("zero") && $("#8 div").hasClass("zero")) ||
             ($("#3 div").hasClass("zero") && $("#6 div").hasClass("zero") && $("#9 div").hasClass("zero")) ||
-            ($("#1 div").hasClass("zero") && $("#4 div").hasClass("zero") && $("#9 div").hasClass("zero")) ||
-            ($("#3 div").hasClass("zero") && $("#4 div").hasClass("zero") && $("#7 div").hasClass("zero"))) {
+            ($("#1 div").hasClass("zero") && $("#5 div").hasClass("zero") && $("#9 div").hasClass("zero")) ||
+            ($("#3 div").hasClass("zero") && $("#5 div").hasClass("zero") && $("#7 div").hasClass("zero"))) {
             alert("ZERO WINS");
 
         }
-        if (($("#1 div").hasClass("cross") && $("#2 div").hasClass("cross") && $("#3 div").hasClass("cross")) ||
-            ($("#3 div").hasClass("cross") && $("#4 div").hasClass("cross") && $("#6 div").hasClass("cross")) ||
+        else if(($("#1 div").hasClass("cross") && $("#2 div").hasClass("cross") && $("#3 div").hasClass("cross")) ||
+            ($("#4 div").hasClass("cross") && $("#5 div").hasClass("cross") && $("#6 div").hasClass("cross")) ||
             ($("#7 div").hasClass("cross") && $("#8 div").hasClass("cross") && $("#9 div").hasClass("cross")) ||
-            ($("#1 div").hasClass("cross") && $("#3 div").hasClass("cross") && $("#7 div").hasClass("cross")) ||
-            ($("#2 div").hasClass("cross") && $("#4 div").hasClass("cross") && $("#8 div").hasClass("cross")) ||
+            ($("#1 div").hasClass("cross") && $("#4 div").hasClass("cross") && $("#7 div").hasClass("cross")) ||
+            ($("#2 div").hasClass("cross") && $("#5 div").hasClass("cross") && $("#8 div").hasClass("cross")) ||
             ($("#3 div").hasClass("cross") && $("#6 div").hasClass("cross") && $("#9 div").hasClass("cross")) ||
-            ($("#1 div").hasClass("cross") && $("#4 div").hasClass("cross") && $("#9 div").hasClass("cross")) ||
-            ($("#3 div").hasClass("cross") && $("#4 div").hasClass("cross") && $("#7 div").hasClass("cross"))) {
+            ($("#1 div").hasClass("cross") && $("#5 div").hasClass("cross") && $("#9 div").hasClass("cross")) ||
+            ($("#3 div").hasClass("cross") && $("#5 div").hasClass("cross") && $("#7 div").hasClass("cross"))) {
             alert("CROSS WINS");
-
+        }
+        else if(c==10){
+        alert("DRAW");
         }
 
     });
