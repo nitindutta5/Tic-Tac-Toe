@@ -19,6 +19,7 @@ $(document).ready(function () {
             ($("#1 div").hasClass("zero") && $("#5 div").hasClass("zero") && $("#9 div").hasClass("zero")) ||
             ($("#3 div").hasClass("zero") && $("#5 div").hasClass("zero") && $("#7 div").hasClass("zero"))) {
             alert("ZERO WINS");
+            $("td").off('click');
 
         }
         else if(($("#1 div").hasClass("cross") && $("#2 div").hasClass("cross") && $("#3 div").hasClass("cross")) ||
@@ -30,6 +31,7 @@ $(document).ready(function () {
             ($("#1 div").hasClass("cross") && $("#5 div").hasClass("cross") && $("#9 div").hasClass("cross")) ||
             ($("#3 div").hasClass("cross") && $("#5 div").hasClass("cross") && $("#7 div").hasClass("cross"))) {
             alert("CROSS WINS");
+            $("td").off('click');
         }
         else if(c==10){
         alert("DRAW");
